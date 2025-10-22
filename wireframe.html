@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digiline Landing Page - Visual Wireframe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .wireframe-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .wf-header {
+      background: white;
+      padding: 40px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .wf-header h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #318EF1;
+    }
+
+    .wf-section {
+      margin-bottom: 40px;
+      border: 3px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .wf-section-header {
+      background: #FFD700;
+      color: #000;
+      padding: 16px 24px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .wf-section-content {
+      padding: 40px;
+    }
+
+    .wf-blue {
+      background: #318EF1;
+      color: white;
+    }
+
+    .wf-white {
+      background: #FEFEFE;
+      color: #252525;
+    }
+
+    .wf-light-gray {
+      background: #F9FAFB;
+      color: #252525;
+    }
+
+    .wf-headline {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .wf-subhead {
+      font-size: 22px;
+      margin: 16px 0;
+      opacity: 0.9;
+      line-height: 1.4;
+    }
+
+    .wf-cta {
+      background: #DB3042;
+      color: white;
+      padding: 18px 48px;
+      display: inline-block;
+      margin: 24px 0;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .wf-note {
+      background: #fff3cd;
+      border-left: 4px solid #318EF1;
+      padding: 20px;
+      margin: 24px 0;
+      color: #000;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .wf-note strong {
+      color: #318EF1;
+    }
+
+    .wf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    .wf-card {
+      border: 2px solid #666;
+      padding: 24px;
+      border-radius: 4px;
+    }
+
+    .wf-card-old {
+      background: #FEE2E2;
+      border-left: 4px solid #DB3042;
+    }
+
+    .wf-card-new {
+      background: #E0F2FE;
+      border-left: 4px solid #318EF1;
+    }
+
+    .wf-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .wf-list li {
+      padding: 8px 0;
+      font-size: 16px;
+    }
+
+    .wf-credibility {
+      border-left: 4px solid #318EF1;
+      padding: 20px;
+      margin: 16px 0;
+      background: #F9FAFB;
+    }
+
+    .wf-accordion {
+      border: 2px dashed #666;
+      padding: 20px;
+      margin: 16px 0;
+    }
+
+    @media (max-width: 768px) {
+      .wf-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .wf-headline {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wireframe-container">
+
+    <div class="wf-header">
+      <h1>🎨 Digiline Platform Landing Page - Visual Wireframe</h1>
+      <p><strong>Target Audience:</strong> Orthodontists & General Dentists offering clear-aligner therapy</p>
+      <p><strong>Primary Goal:</strong> Trial case conversion ("Try 3 cases at 50% off")</p>
+      <p><strong>Platform:</strong> Netlify (Standalone HTML)</p>
+      <p><strong>Tone:</strong> Bold + Clinical + Visionary</p>
+      <p><strong>Design Philosophy:</strong> 90/10 color rule (blue/white/black foundation, red CTAs only), bold typography, clinical precision aesthetic</p>
+    </div>
+
+    <!-- SECTION 1: HERO -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 1: HERO (Blue Background #318EF1) - NO PRICING
+      </div>
+      <div class="wf-section-content wf-blue">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+          <img src="https://digitalsmiledesign.com/images/Digiline/digiline.png" alt="Digiline Logo" style="height: 60px; margin-bottom: 32px; filter: brightness(0) invert(1);">
+
+          <div class="wf-headline">
+            Stop Wasting $1.5K Per Case on Thermoforming
+          </div>
+
+          <div class="wf-subhead">
+            Digitally designed. Digitally manufactured. Clinically precise.<br>
+            Digiline's DAD-DAM workflow powers the future of orthodontics.
+          </div>
+
+          <div class="wf-cta">
+            Calculate Your Lab Fee Savings →
+          </div>
+
+          <p style="font-size: 14px; opacity: 0.8; margin-top: 16px;">
+            70-year orthodontic heritage • FDA-cleared • First direct-print aligner brand
+          </p>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Immediate orientation to COST PROBLEM, not price. Quantified pain ($1.5K) grabs attention.<br>
+          <strong>CTA Strategy:</strong> Discovery-focused (calculator tool), NOT transaction-focused. Low friction, high engagement.<br>
+          <strong>Colors:</strong> Blue background (innovation, authority), white text, RED CTA (exclusive use for action).<br>
+          <strong>Typography:</strong> 72-96px headline on desktop (scales to 48px mobile via clamp()).<br>
+          <strong>Mobile:</strong> Single column, logo + headline + subhead + CTA stack vertically.<br>
+          <strong>NO PRICING HERE</strong> - Critical mistake to avoid.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: QUANTIFIED PROBLEM -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 2: QUANTIFIED PROBLEM (White Background #FEFEFE)
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 24px;">
+            You're Losing $1.5-2K Per Case to Outdated Thermoforming
+          </h2>
+
+          <div class="wf-grid">
+            <div>
+              <h3 style="font-size: 72px; font-weight: 700; color: #DB3042; margin-bottom: 8px;">$1.5-2K</h3>
+              <p>Lab fees wasted per case on centralized thermoforming</p>
+            </div>
+            <div>
+              <h3 style="font-size: 72px; font-weight: 700; color: #DB3042; margin-bottom: 8px;">40-60%</h3>
+              <p>Random thickness loss during thermoforming process</p>
+            </div>
+            <div>
+              <h3 style="font-size: 72px; font-weight: 700; color: #DB3042; margin-bottom: 8px;">2-3 weeks</h3>
+              <p>Turnaround delays for each aligner set</p>
+            </div>
+            <div>
+              <h3 style="font-size: 72px; font-weight: 700; color: #DB3042; margin-bottom: 8px;">Truckloads</h3>
+              <p>Plastic waste shipped weekly from centralized labs</p>
+            </div>
+          </div>
+
+          <p style="font-size: 18px; line-height: 1.6; margin-top: 32px;">
+            While you focus on patient care, outdated thermoforming workflows drain profitability, delay treatment, and compromise clinical precision. Every case becomes a gamble.
+          </p>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Name and QUANTIFY the pain FIRST, before introducing solution.<br>
+          <strong>Purpose:</strong> Problem recognition and urgency. "Do I have this problem?"<br>
+          <strong>Design:</strong> Large stat numbers (72px) in red to emphasize pain, grid layout for scannability.<br>
+          <strong>Conversion Goal:</strong> Create awareness of cost of inaction.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CREDIBILITY WAVE #1 -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 3: CREDIBILITY WAVE #1 (White Background) - Build Trust Early
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 32px; text-align: center;">
+            Backed by Science. Proven by Heritage.
+          </h2>
+
+          <div class="wf-credibility">
+            <h4 style="font-size: 24px; font-weight: 700; color: #318EF1; margin-bottom: 8px;">70-Year Orthodontic Heritage</h4>
+            <p>Three generations of innovation in dental materials and aligner technology. From Park Dental Research to Digiline.</p>
+          </div>
+
+          <div class="wf-credibility">
+            <h4 style="font-size: 24px; font-weight: 700; color: #318EF1; margin-bottom: 8px;">4 Master's Level Theses (London University)</h4>
+            <p>Independent academic validation of direct-print aligner performance, biomechanics, and clinical outcomes.</p>
+          </div>
+
+          <div class="wf-credibility">
+            <h4 style="font-size: 24px; font-weight: 700; color: #318EF1; margin-bottom: 8px;">CT Scan Validation: ±90% Accuracy</h4>
+            <p>Precise thickness control vs. 40-60% random loss in thermoforming. Scientific proof of superior manufacturing precision.</p>
+          </div>
+
+          <div class="wf-credibility">
+            <h4 style="font-size: 24px; font-weight: 700; color: #318EF1; margin-bottom: 8px;">FDA-Cleared Material</h4>
+            <p>Biocompatible resin with <0.1 ppm residual monomer. Exceeds safety standards for intraoral use.</p>
+          </div>
+
+          <div class="wf-credibility">
+            <h4 style="font-size: 24px; font-weight: 700; color: #318EF1; margin-bottom: 8px;">First Direct-Print Aligner Brand (2022)</h4>
+            <p>Pioneering the future of orthodontics with proprietary printer + resin ecosystem.</p>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Build scientific trust EARLY, before detailed solution. "Can you solve my problem?"<br>
+          <strong>Purpose:</strong> Establish authority and credibility through validation, not claims.<br>
+          <strong>Design:</strong> Left 4px blue border accent (similar to PageWeaver testimonials). Hover effect: border blue → red, slight translateX.<br>
+          <strong>Conversion Goal:</strong> Overcome skepticism with measurable proof points.<br>
+          <strong>Note:</strong> No customer testimonials yet, so scientific validation is critical.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTRAST FRAME -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 4: CONTRAST FRAME - OLD WAY vs. NEW WAY (White Background) - CRITICAL FOR PRAGMATISTS
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 16px; text-align: center;">
+            The Transformation Is Dramatic
+          </h2>
+          <p style="text-align: center; font-size: 18px; margin-bottom: 48px;">
+            See exactly what changes when you move from centralized thermoforming to direct-print
+          </p>
+
+          <div class="wf-grid">
+            <div class="wf-card wf-card-old">
+              <h3 style="font-size: 28px; margin-bottom: 24px;">❌ OLD WAY<br><small style="font-size: 16px; opacity: 0.8;">Centralized Thermoforming</small></h3>
+              <ul class="wf-list">
+                <li>❌ Centralized thermoforming labs</li>
+                <li>❌ $1.5-2K lab fees per case</li>
+                <li>❌ 2-3 week turnaround delays</li>
+                <li>❌ 40-60% random thickness loss</li>
+                <li>❌ Monthly in-office visits required</li>
+                <li>❌ Generic force delivery (no control)</li>
+                <li>❌ Limited pediatric case options</li>
+                <li>❌ Truckloads of plastic waste weekly</li>
+              </ul>
+            </div>
+
+            <div class="wf-card wf-card-new">
+              <h3 style="font-size: 28px; margin-bottom: 24px;">✅ NEW WAY<br><small style="font-size: 16px; opacity: 0.8;">Digiline Direct-Print</small></h3>
+              <ul class="wf-list">
+                <li>✅ In-practice direct printing (your control)</li>
+                <li>✅ 50-70% lower cost per case</li>
+                <li>✅ Days, not weeks (rapid turnaround)</li>
+                <li>✅ ±90% accuracy maintained (CT-verified)</li>
+                <li>✅ Quarterly remote monitoring (Grin®)</li>
+                <li>✅ Variable-thickness biomechanics</li>
+                <li>✅ Kids & interceptive accessories included</li>
+                <li>✅ 60g+ waste saved per case (sustainability)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Makes transformation tangible and specific. Essential for PRAGMATIST buyers.<br>
+          <strong>Purpose:</strong> "What exactly will change?" Side-by-side comparison shows concrete differences.<br>
+          <strong>Design:</strong> CSS Grid (2 columns desktop, stacks mobile). Old Way = light red bg + red border. New Way = light blue bg + blue border.<br>
+          <strong>Desktop Layout:</strong> SIDE-BY-SIDE for direct comparison (critical, not stacked).<br>
+          <strong>Mobile Layout:</strong> Stacks vertically (Old Way on top, New Way below).<br>
+          <strong>Conversion Goal:</strong> Create desire for transformation with quantified benefits.<br>
+          <strong>Emoji Handling:</strong> In production code, ❌ = &amp;#x274C; and ✅ = &amp;#x2705; (HTML entities, NOT direct emojis).
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DAD-DAM METHODOLOGY -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 5: DAD-DAM METHODOLOGY (Blue Background) - Core Differentiator
+      </div>
+      <div class="wf-section-content wf-blue">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+          <h2 style="font-size: 48px; font-weight: 700; margin-bottom: 16px;">
+            The Future of Orthodontics
+          </h2>
+          <p style="font-size: 22px; margin-bottom: 48px; opacity: 0.9;">
+            What changes when you control BOTH design AND manufacturing
+          </p>
+
+          <div class="wf-grid" style="text-align: left;">
+            <div style="background: rgba(255,255,255,0.1); padding: 32px; border-radius: 8px;">
+              <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">DAD</h3>
+              <h4 style="font-size: 20px; margin-bottom: 24px;">Direct Aligner Design</h4>
+              <ul class="wf-list">
+                <li>• Biomechanical principles</li>
+                <li>• Variable-thickness design protocols</li>
+                <li>• Force management optimization</li>
+                <li>• Research-backed design innovations</li>
+              </ul>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.1); padding: 32px; border-radius: 8px;">
+              <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">DAM</h3>
+              <h4 style="font-size: 20px; margin-bottom: 24px;">Direct Aligner Manufacturing</h4>
+              <ul class="wf-list">
+                <li>• Proprietary material development</li>
+                <li>• Manufacturing process optimization</li>
+                <li>• Quality control systems (±90% accuracy)</li>
+                <li>• Production scalability in-practice</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top: 48px; padding: 32px; background: rgba(255,255,255,0.15); border-radius: 8px;">
+            <p style="font-size: 20px; line-height: 1.6;">
+              <strong>[INFOGRAPHIC PLACEHOLDER]</strong><br>
+              Visual workflow: Diagnosis → DAD (Design) → DAM (Manufacturing) → Grin® Monitoring<br>
+              <em>Full infographic will be designed separately and integrated here</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Explains WHY Digiline is different at fundamental level. Not just features, but methodology.<br>
+          <strong>Purpose:</strong> "How does this work?" Builds confidence in the solution's foundation.<br>
+          <strong>Design:</strong> Blue background (innovation, authority), two-column grid for DAD + DAM, infographic placeholder.<br>
+          <strong>Conversion Goal:</strong> Establish unique positioning (not just another aligner brand).<br>
+          <strong>Visual:</strong> Infographic showing complete workflow to be designed separately.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TRANSFORMATION PROMISE -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 6: TRANSFORMATION PROMISE (White Background) - Outcome-Focused Benefits
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 16px; text-align: center;">
+            What You'll Achieve with Digiline
+          </h2>
+          <p style="text-align: center; font-size: 18px; margin-bottom: 48px;">
+            Quantified clinical and business outcomes, not just features
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">50-70% Lower Cost Per Case</h4>
+              <p>Eliminate $1.5-2K lab fees. Direct-print economics transform profitability.</p>
+            </div>
+
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">50% Fewer Aligners Needed</h4>
+              <p>Precise force control reduces refinements and speeds treatment time.</p>
+            </div>
+
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">2/3 Fewer Office Visits</h4>
+              <p>Grin® remote monitoring replaces most in-person check-ins. Reclaim chair time.</p>
+            </div>
+
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">Days Not Weeks Turnaround</h4>
+              <p>In-practice manufacturing eliminates shipping delays. Start treatment faster.</p>
+            </div>
+
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">60g+ Plastic Waste Saved</h4>
+              <p>Sustainable direct-print eliminates truckloads of thermoforming waste per practice.</p>
+            </div>
+
+            <div style="padding: 24px;">
+              <h4 style="font-size: 24px; color: #318EF1; margin-bottom: 12px;">Pediatric Cases Unlocked</h4>
+              <p>Kids & interceptive accessories expand your addressable patient base.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Outcome-focused language. NOT "UV-blocker-free resin" but "50-70% lower cost per case."<br>
+          <strong>Purpose:</strong> "What's in it for me?" Translate features into clinical/business benefits.<br>
+          <strong>Design:</strong> Grid layout, blue accent headlines, quantified benefits wherever possible.<br>
+          <strong>Conversion Goal:</strong> Build desire through specific, measurable transformation promises.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PLATFORM OVERVIEW -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 7: PLATFORM OVERVIEW / HOW IT WORKS (Light Gray Background)
+      </div>
+      <div class="wf-section-content wf-light-gray">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 48px; text-align: center;">
+            Complete Workflow: Diagnosis → Planning → Manufacturing → Monitoring
+          </h2>
+
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #318EF1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 700; margin: 0 auto 16px;">1</div>
+              <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 12px;">Diagnosis</h4>
+              <p style="font-size: 14px;">CBCT & DSD smile-photo analysis for precision treatment planning</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #318EF1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 700; margin: 0 auto 16px;">2</div>
+              <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 12px;">Planning</h4>
+              <p style="font-size: 14px;">AI-assisted + orthodontist-reviewed treatment plans with DAD protocols</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #318EF1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 700; margin: 0 auto 16px;">3</div>
+              <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 12px;">Manufacturing</h4>
+              <p style="font-size: 14px;">In-practice direct-printing with proprietary DAM workflow (days, not weeks)</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #318EF1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; font-weight: 700; margin: 0 auto 16px;">4</div>
+              <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 12px;">Monitoring</h4>
+              <p style="font-size: 14px;">Grin® remote monitoring reduces in-person visits by 2/3</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> "How does this work?" Process visualization builds confidence and reduces uncertainty.<br>
+          <strong>Purpose:</strong> Show complete end-to-end solution (not just manufacturing).<br>
+          <strong>Design:</strong> 4-step visual process, numbered circles, equal spacing.<br>
+          <strong>Mobile:</strong> Stacks vertically (1, 2, 3, 4 in sequence).<br>
+          <strong>Conversion Goal:</strong> Demonstrate completeness of platform vs. point solutions.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: TECHNICAL ADVANTAGES -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 8: TECHNICAL ADVANTAGES (White Background) - Expandable Accordions
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 16px; text-align: center;">
+            10 Engineering Advantages of DAD-DAM
+          </h2>
+          <p style="text-align: center; font-size: 18px; margin-bottom: 48px;">
+            High-level benefits with expandable technical depth for those who want it
+          </p>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">1. Thickness Control & Force Management [+]</h4>
+            <p><strong>Benefit:</strong> Precise force delivery, not random thickness loss</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: CT scan data, 1x1mm geometric modification = 60% force increase (50→80g), ±90% accuracy vs 40-60% loss]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">2. Shape Memory & Reactivation [+]</h4>
+            <p><strong>Benefit:</strong> Aligners maintain force longer, reducing treatment time</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Freeze-drying technology demonstration, continuous force vs. thermoforming decay]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">3. Superior Anatomical Adaptation [+]</h4>
+            <p><strong>Benefit:</strong> Better fit = improved patient comfort and compliance</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Direct-print maintains designed geometry, no warping from heat/pressure]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">4. Manufacturing Speed [+]</h4>
+            <p><strong>Benefit:</strong> Days not weeks, start treatment immediately</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: One person operates 4 printers, 150 aligners/hour, in-practice production eliminates shipping]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">5. Material Safety (Biocompatible) [+]</h4>
+            <p><strong>Benefit:</strong> FDA-cleared, reduces allergy risk</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: <0.1 ppm residual monomer, UV-blocker-free formulation, biocompatibility testing]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">6. Environmental Impact [+]</h4>
+            <p><strong>Benefit:</strong> 60g+ waste saved per case, sustainable practice</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Eliminate thermoforming models, truckload shipping waste, 75% plastic reduction]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">7. Treatment Efficiency [+]</h4>
+            <p><strong>Benefit:</strong> 50% fewer aligners, 2/3 fewer visits</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Variable-thickness reduces refinements, remote monitoring data, treatment time reduction studies]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">8. Customizable Biomechanics [+]</h4>
+            <p><strong>Benefit:</strong> Tailor force delivery to each patient's needs</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Variable-thickness design, attachment optimization, case-specific force profiles]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">9. Patient Experience [+]</h4>
+            <p><strong>Benefit:</strong> Faster start, fewer visits, better comfort</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Grin® remote monitoring, immediate treatment start, superior fit = higher satisfaction]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">10. Cost Effectiveness [+]</h4>
+            <p><strong>Benefit:</strong> 50-70% lower cost per case</p>
+            <p style="font-size: 14px; margin-top: 8px; font-style: italic;">[Expandable: Eliminate lab fees, reduce refinements, compete with offshore pricing at higher quality]</p>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Layered technical depth. Simple headlines for scanning, expandable details for deep divers.<br>
+          <strong>Purpose:</strong> "Does this stand up to scrutiny?" Addresses technical due diligence.<br>
+          <strong>Design:</strong> Accordion UI (click to expand). Each shows: Simple benefit + Technical detail + Supporting story/study.<br>
+          <strong>JavaScript:</strong> Click accordion button to expand/collapse, smooth max-height transition.<br>
+          <strong>Conversion Goal:</strong> Build confidence through comprehensive technical validation without overwhelming.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: WHO THIS IS FOR -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 9: WHO THIS IS FOR (White Background) - Self-Selection & Qualification
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 48px; text-align: center;">
+            Join the First Wave of Direct-Print Orthodontics
+          </h2>
+
+          <div style="background: #E0F2FE; padding: 32px; border-left: 4px solid #318EF1; margin-bottom: 32px;">
+            <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 16px;">✅ This IS for you if:</h3>
+            <ul style="font-size: 18px; line-height: 2; list-style: none; padding: 0;">
+              <li>✅ You want to regain control of aligner economics and workflow</li>
+              <li>✅ You're ready to eliminate $1.5-2K lab fees per case</li>
+              <li>✅ You value clinical precision backed by scientific validation</li>
+              <li>✅ You want to offer faster treatment starts and remote monitoring</li>
+              <li>✅ You're committed to sustainable, waste-reducing practices</li>
+              <li>✅ You're ready to be an early adopter and innovation leader</li>
+            </ul>
+          </div>
+
+          <div style="background: #FEE2E2; padding: 32px; border-left: 4px solid #DB3042;">
+            <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 16px;">❌ This is NOT for you if:</h3>
+            <ul style="font-size: 18px; line-height: 2; list-style: none; padding: 0;">
+              <li>❌ You're locked into long-term vendor contracts</li>
+              <li>❌ You're not ready to adopt digital-first workflows</li>
+              <li>❌ You prefer status quo over innovation</li>
+              <li>❌ You don't have space for in-practice manufacturing</li>
+            </ul>
+          </div>
+
+          <p style="text-align: center; font-size: 18px; margin-top: 48px; font-weight: 600;">
+            High-volume practices, progressive DSOs, and forward-thinking clinicians are joining the direct-print revolution.
+          </p>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Self-selection and qualification. "Is this for me?"<br>
+          <strong>Purpose:</strong> Create desire through exclusivity + early adopter positioning.<br>
+          <strong>Design:</strong> Green box (IS for you) vs. Red box (NOT for you). Clear contrast.<br>
+          <strong>Conversion Goal:</strong> Pre-qualify leads, create urgency through early adopter messaging.<br>
+          <strong>Tone:</strong> Bold, confident. "Join the first wave" positioning.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: TRIAL OFFER -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 10: TRIAL OFFER & VALUE STACK (White Background) - TRANSACTION CTA
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <h2 style="font-size: 48px; font-weight: 700; margin-bottom: 16px;">
+            Try Your First 3 Cases at 50% Off
+          </h2>
+          <p style="font-size: 22px; margin-bottom: 48px;">
+            Experience the complete DAD-DAM workflow with full support
+          </p>
+
+          <div style="background: #F9FAFB; padding: 48px; border: 2px solid #318EF1; border-radius: 8px; text-align: left;">
+            <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 32px; text-align: center;">What's Included in Your Trial:</h3>
+
+            <div style="display: grid; gap: 20px; font-size: 18px;">
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>CBCT & DSD Smile-Photo Diagnosis</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Comprehensive digital analysis for treatment planning</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>AI + Orthodontist Treatment Plan</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">AI-assisted planning reviewed by licensed orthodontist</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>Direct-Printed Aligners (Full Series)</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Complete aligner sets manufactured with DAD-DAM methodology</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>3-Month Supply + Lost-Tray Reprints</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Material supply and backup replacements included</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>Grin® Remote Monitoring Kit</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Reduce in-person visits by 2/3 with patient tracking</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>Training & Onboarding Support</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Complete setup assistance and workflow training</span>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start;">
+                <span style="color: #318EF1; font-size: 24px; margin-right: 12px;">✅</span>
+                <div>
+                  <strong>Full Technical Support During Trial</strong><br>
+                  <span style="font-size: 16px; opacity: 0.8;">Dedicated support team available throughout your trial period</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-cta" style="font-size: 20px; padding: 20px 60px; margin-top: 48px;">
+            Start Your Trial Cases →
+          </div>
+
+          <p style="font-size: 14px; margin-top: 24px; opacity: 0.7;">
+            Limited availability for early adopters. Secure your spot in the direct-print revolution.
+          </p>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Trial offer comes HERE, AFTER credibility and value are fully established. NOT in hero!<br>
+          <strong>Purpose:</strong> "What's the offer?" By this point, they've seen problem, credibility, transformation, and technical validation.<br>
+          <strong>Design:</strong> Value stack (itemized list), gray box with blue border, checkmarks in blue (not red).<br>
+          <strong>CTA:</strong> TRANSACTION-focused: "Start Your Trial Cases" (direct conversion).<br>
+          <strong>Risk Reversal:</strong> "Full support during trial period" reduces hesitation.<br>
+          <strong>Urgency:</strong> "Limited availability for early adopters" creates scarcity.<br>
+          <strong>Conversion Goal:</strong> Drive trial case sign-ups (primary business goal).
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FAQ & FINAL CTA -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        SECTION 11: FAQ & FINAL CTA (White Background) - Objection Handling
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 48px; text-align: center;">
+            Common Questions
+          </h2>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Technical: What are the material specifications? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Biocompatible resin, FDA-cleared, <0.1 ppm residual monomer, UV-blocker-free, full material data sheet available]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Technical: What's the typical turnaround time? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Days not weeks for in-practice manufacturing, immediate treatment start capability, no shipping delays]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Business: What are the pricing tiers after trial? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Volume-based pricing, 50-70% lower than centralized lab fees, contact for practice-specific quote]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Business: Is there a distributor/partner model? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Yes, partnership opportunities for distributors and DSOs, contact for details]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Clinical: What case complexity can Digiline handle? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Mild to moderate cases, interceptive orthodontics, pediatric cases, detailed case assessment included in trial]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Clinical: How do refinements work? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: 50% fewer refinements due to precise force control, fast in-practice manufacturing when needed]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Operations: What space/equipment is required? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Small footprint printer system, one person operates 4 printers, full setup guidance provided]</p>
+          </div>
+
+          <div class="wf-accordion">
+            <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Operations: What training is provided? [+]</h4>
+            <p style="font-size: 14px; font-style: italic;">[Expandable: Complete onboarding, workflow training, ongoing technical support, included in trial]</p>
+          </div>
+
+          <div style="margin-top: 64px; padding: 64px 0; text-align: center; background: linear-gradient(135deg, #318EF1 0%, #2070C9 100%); color: white; margin-left: -40px; margin-right: -40px; margin-bottom: -40px; border-radius: 0 0 8px 8px;">
+            <h2 style="font-size: 42px; font-weight: 700; margin-bottom: 16px;">
+              Join the Direct-Print Revolution
+            </h2>
+            <p style="font-size: 20px; margin-bottom: 32px; opacity: 0.9;">
+              Early adopters are transforming their practices. Will you lead or follow?
+            </p>
+            <div class="wf-cta" style="display: inline-block;">
+              Secure Your Early Adopter Advantage →
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Psychology:</strong> Final objection handling + urgency close.<br>
+          <strong>Purpose:</strong> Address remaining concerns, provide one last conversion opportunity.<br>
+          <strong>Design:</strong> 8-10 FAQ accordions organized by category (Technical, Business, Clinical, Operations).<br>
+          <strong>Final CTA:</strong> Blue gradient background (dramatic, premium), urgency messaging ("Will you lead or follow?"), early adopter positioning.<br>
+          <strong>Conversion Goal:</strong> Last chance to convert with FOMO (fear of missing out) and leadership positioning.
+        </div>
+      </div>
+    </section>
+
+    <!-- STICKY CTA BAR NOTE -->
+    <section class="wf-section">
+      <div class="wf-section-header">
+        BONUS: STICKY CTA BAR (Appears after scrolling past hero ~800px)
+      </div>
+      <div class="wf-section-content wf-white">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div style="position: relative; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.15); padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; border-radius: 4px;">
+            <div>
+              <strong style="font-size: 16px;">Try 3 Cases at 50% Off</strong>
+              <span style="font-size: 14px; opacity: 0.7; margin-left: 16px;">| Full Support Included</span>
+            </div>
+            <div class="wf-cta" style="padding: 12px 32px; margin: 0; font-size: 16px;">
+              Start Trial →
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-note">
+          <strong>Purpose:</strong> Persistent conversion opportunity as user scrolls.<br>
+          <strong>Behavior:</strong> Hidden initially (top: -100px), slides in when scrollY > 800px.<br>
+          <strong>Design:</strong> Fixed to top, white background, shadow, unobtrusive.<br>
+          <strong>JavaScript:</strong> window.addEventListener('scroll') to toggle .visible class.<br>
+          <strong>Mobile:</strong> Smaller text, stacks on narrow screens.
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div style="background: white; padding: 40px; margin-top: 40px; border-radius: 8px; text-align: center;">
+      <h2 style="font-size: 24px; margin-bottom: 16px; color: #318EF1;">✅ Wireframe Complete - Ready for Review</h2>
+      <p style="font-size: 16px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+        <strong>Next Steps:</strong><br>
+        1. Review this visual wireframe structure<br>
+        2. Confirm all 11 sections meet expectations<br>
+        3. Suggest any changes to flow, content, or emphasis<br>
+        4. Approve to proceed to production-ready HTML/CSS/JavaScript code generation<br><br>
+
+        <strong>Questions to Consider:</strong><br>
+        • Does this structure and psychological flow make sense?<br>
+        • Are there any sections to add, remove, or reorder?<br>
+        • Any changes to the visual aesthetic or color strategy?<br>
+        • Does the contrast frame (Section 4) effectively show the transformation?<br>
+        • Is the trial offer (Section 10) positioned correctly AFTER credibility/value?
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
