@@ -764,7 +764,7 @@
     /* Sticky CTA Bar */
     .dgl-sticky-bar {
       position: fixed;
-      top: -100px;
+      top: 0;
       left: 0;
       right: 0;
       background: var(--white);
@@ -773,12 +773,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: top 0.3s ease;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
       z-index: 1000;
     }
 
     .dgl-sticky-bar.visible {
-      top: 0;
+      transform: translateY(0);
     }
 
     .dgl-sticky-bar__text {
