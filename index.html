@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Direct-Print Aligners Are Here. Digiline's UV-blocker-free, shape-memory technology delivers precision-engineered aligners that track predictably and require 75% fewer visits.">
+  <title>Digiline | Direct-Print Clear Aligners</title>
+
+  <style>
+    /* CSS Variables for Digiline Brand Palette */
+    :root {
+      --blue: #318EF1;
+      --red: #DB3042;
+      --black: #252525;
+      --white: #FEFEFE;
+      --gray-light: #F8F9FA;
+      --gray-medium: #6C757D;
+      --blue-light: #E8F4FD;
+    }
+
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Base Typography */
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Scoped Container */
+    .dgl-page {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Section Layout */
+    .dgl-section {
+      width: 100%;
+      padding: 96px 0;
+    }
+
+    .dgl-section-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    /* Hero Section */
+    .dgl-hero {
+      background: linear-gradient(135deg, var(--blue) 0%, #2070C9 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .dgl-hero__logo {
+      height: 60px;
+      margin-bottom: 48px;
+      filter: brightness(0) invert(1);
+    }
+
+    .dgl-hero__headline {
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dgl-hero__subhead {
+      font-size: clamp(18px, 2.5vw, 24px);
+      line-height: 1.5;
+      opacity: 0.95;
+      max-width: 900px;
+      margin: 0 auto 48px;
+    }
+
+    .dgl-cta-primary {
+      background: var(--red);
+      color: var(--white);
+      padding: 20px 60px;
+      font-size: 20px;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(219, 48, 66, 0.3);
+    }
+
+    .dgl-cta-primary:hover {
+      background: #B02635;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(219, 48, 66, 0.4);
+    }
+
+    .dgl-hero__trust-bar {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-top: 32px;
+    }
+
+    .dgl-hero__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 64px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dgl-hero__stat {
+      padding: 24px;
+    }
+
+    .dgl-hero__stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .dgl-hero__stat-label {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Physics Problem Section */
+    .dgl-physics {
+      background: var(--white);
+    }
+
+    .dgl-physics__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--black);
+    }
+
+    .dgl-physics__subhead {
+      font-size: 18px;
+      text-align: center;
+      color: var(--gray-medium);
+      max-width: 900px;
+      margin: 0 auto 64px;
+      line-height: 1.6;
+    }
+
+    .dgl-physics__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .dgl-physics__card {
+      background: var(--gray-light);
+      padding: 40px;
+      border-radius: 8px;
+      border-left: 4px solid var(--blue);
+    }
+
+    .dgl-physics__icon {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .dgl-physics__card-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+      color: var(--black);
+    }
+
+    .dgl-physics__card-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-medium);
+      margin-bottom: 24px;
+    }
+
+    .dgl-physics__reality {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .dgl-physics__reality-title {
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--black);
+    }
+
+    .dgl-physics__reality-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: var(--gray-medium);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .dgl-physics__reality-list li {
+      padding-left: 4px;
+    }
+
+    .dgl-physics__bridge {
+      background: var(--blue-light);
+      padding: 40px;
+      border-radius: 8px;
+      text-align: center;
+      border: 2px solid var(--blue);
+      margin-bottom: 48px;
+    }
+
+    .dgl-physics__bridge-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 0;
+    }
+
+    .dgl-physics__quote {
+      padding: 40px;
+      background: var(--gray-light);
+      border-left: 4px solid var(--blue);
+      font-style: italic;
+      text-align: center;
+    }
+
+    .dgl-physics__quote-text {
+      font-size: 20px;
+      line-height: 1.6;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+
+    .dgl-physics__quote-author {
+      font-size: 16px;
+      color: var(--gray-medium);
+      font-style: normal;
+    }
+
+    /* Credibility Section */
+    .dgl-credibility {
+      background: var(--white);
+    }
+
+    .dgl-credibility__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .dgl-credibility__marker {
+      border-left: 4px solid var(--blue);
+      padding: 32px;
+      padding-left: 32px;
+      margin-bottom: 24px;
+      background: var(--gray-light);
+      transition: all 0.3s ease;
+    }
+
+    .dgl-credibility__marker:hover {
+      border-left-color: var(--red);
+      transform: translateX(4px);
+    }
+
+    .dgl-credibility__marker-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+
+    .dgl-credibility__marker-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-medium);
+    }
+
+    /* Contrast Frame */
+    .dgl-contrast {
+      background: var(--white);
+    }
+
+    .dgl-contrast__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .dgl-contrast__subhead {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray-medium);
+      margin-bottom: 64px;
+    }
+
+    .dgl-contrast__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .dgl-contrast__card {
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    .dgl-contrast__card--old {
+      background: #FEE2E2;
+      border-left: 4px solid var(--red);
+    }
+
+    .dgl-contrast__card--new {
+      background: #E0F2FE;
+      border-left: 4px solid var(--blue);
+    }
+
+    .dgl-contrast__card-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .dgl-contrast__card-subtitle {
+      font-size: 16px;
+      opacity: 0.8;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .dgl-contrast__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dgl-contrast__list li {
+      padding: 12px 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* DAD-DAM Section */
+    .dgl-daddam {
+      background: linear-gradient(135deg, var(--blue) 0%, #2070C9 100%);
+      color: var(--white);
+    }
+
+    .dgl-daddam__headline {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .dgl-daddam__subhead {
+      font-size: 22px;
+      text-align: center;
+      opacity: 0.9;
+      margin-bottom: 64px;
+    }
+
+    .dgl-daddam__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .dgl-daddam__card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    .dgl-daddam__card-label {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .dgl-daddam__card-title {
+      font-size: 20px;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .dgl-daddam__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dgl-daddam__list li {
+      padding: 8px 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .dgl-daddam__infographic {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 48px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* Transformation Section */
+    .dgl-transformation {
+      background: var(--white);
+    }
+
+    .dgl-transformation__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .dgl-transformation__subhead {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray-medium);
+      margin-bottom: 64px;
+    }
+
+    .dgl-transformation__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .dgl-transformation__item {
+      padding: 32px;
+    }
+
+    .dgl-transformation__item-title {
+      font-size: 24px;
+      color: var(--blue);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .dgl-transformation__item-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-medium);
+    }
+
+    /* Platform Section */
+    .dgl-platform {
+      background: var(--gray-light);
+    }
+
+    .dgl-platform__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .dgl-platform__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    .dgl-platform__step {
+      text-align: center;
+    }
+
+    .dgl-platform__step-number {
+      width: 80px;
+      height: 80px;
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 auto 24px;
+    }
+
+    .dgl-platform__step-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .dgl-platform__step-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--gray-medium);
+    }
+
+    /* Technical Advantages - Accordion */
+    .dgl-technical {
+      background: var(--white);
+    }
+
+    .dgl-technical__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .dgl-technical__subhead {
+      text-align: center;
+      font-size: 18px;
+      color: var(--gray-medium);
+      margin-bottom: 64px;
+    }
+
+    .dgl-accordion {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .dgl-accordion-item {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 16px;
+    }
+
+    .dgl-accordion-button {
+      width: 100%;
+      padding: 24px;
+      background: var(--white);
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--black);
+      transition: background 0.3s ease;
+    }
+
+    .dgl-accordion-button:hover {
+      background: var(--gray-light);
+    }
+
+    .dgl-accordion-icon {
+      font-size: 24px;
+      font-weight: 400;
+      transition: transform 0.3s ease;
+    }
+
+    .dgl-accordion-item.active .dgl-accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    .dgl-accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 24px;
+    }
+
+    .dgl-accordion-item.active .dgl-accordion-content {
+      padding: 24px;
+    }
+
+    .dgl-accordion-benefit {
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .dgl-accordion-detail {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--gray-medium);
+      margin-top: 8px;
+    }
+
+    /* Who This Is For */
+    .dgl-audience {
+      background: var(--white);
+    }
+
+    .dgl-audience__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .dgl-audience__box {
+      padding: 40px;
+      border-radius: 8px;
+      margin-bottom: 32px;
+    }
+
+    .dgl-audience__box--positive {
+      background: #E0F2FE;
+      border-left: 4px solid var(--blue);
+    }
+
+    .dgl-audience__box--negative {
+      background: #FEE2E2;
+      border-left: 4px solid var(--red);
+    }
+
+    .dgl-audience__box-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .dgl-audience__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .dgl-audience__footer {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 48px;
+    }
+
+    /* Trial Offer */
+    .dgl-trial {
+      background: var(--white);
+    }
+
+    .dgl-trial__headline {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .dgl-trial__subhead {
+      font-size: 22px;
+      text-align: center;
+      color: var(--gray-medium);
+      margin-bottom: 64px;
+    }
+
+    .dgl-trial__box {
+      background: var(--gray-light);
+      padding: 56px;
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      max-width: 900px;
+      margin: 0 auto 48px;
+    }
+
+    .dgl-trial__box-title {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .dgl-trial__items {
+      display: grid;
+      gap: 24px;
+    }
+
+    .dgl-trial__item {
+      display: flex;
+      align-items: start;
+    }
+
+    .dgl-trial__item-icon {
+      color: var(--blue);
+      font-size: 24px;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+
+    .dgl-trial__item-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .dgl-trial__item-text {
+      font-size: 16px;
+      color: var(--gray-medium);
+    }
+
+    .dgl-trial__cta-container {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .dgl-trial__disclaimer {
+      font-size: 14px;
+      text-align: center;
+      color: var(--gray-medium);
+    }
+
+    /* FAQ Section */
+    .dgl-faq {
+      background: var(--white);
+    }
+
+    .dgl-faq__headline {
+      font-size: clamp(36px, 5vw, 48px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .dgl-faq__final-cta {
+      background: linear-gradient(135deg, var(--blue) 0%, #2070C9 100%);
+      color: var(--white);
+      padding: 80px 40px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 64px;
+    }
+
+    .dgl-faq__final-headline {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .dgl-faq__final-subhead {
+      font-size: 20px;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    /* Sticky CTA Bar */
+    .dgl-sticky-bar {
+      position: fixed;
+      top: -100px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: top 0.3s ease;
+      z-index: 1000;
+    }
+
+    .dgl-sticky-bar.visible {
+      top: 0;
+    }
+
+    .dgl-sticky-bar__text {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .dgl-sticky-bar__subtext {
+      font-size: 14px;
+      color: var(--gray-medium);
+      margin-left: 16px;
+    }
+
+    .dgl-sticky-bar__cta {
+      padding: 12px 32px;
+      font-size: 16px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .dgl-section {
+        padding: 64px 0;
+      }
+
+      .dgl-hero {
+        padding: 80px 0;
+      }
+
+      .dgl-physics__grid,
+      .dgl-contrast__grid,
+      .dgl-daddam__grid,
+      .dgl-transformation__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dgl-platform__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .dgl-section-content {
+        padding: 0 24px;
+      }
+
+      .dgl-hero__stats,
+      .dgl-platform__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dgl-sticky-bar {
+        flex-direction: column;
+        padding: 16px 24px;
+      }
+
+      .dgl-sticky-bar__subtext {
+        margin-left: 0;
+        margin-top: 4px;
+      }
+
+      .dgl-sticky-bar__cta {
+        margin-top: 12px;
+        width: 100%;
+      }
+
+      .dgl-cta-primary {
+        width: 100%;
+        padding: 18px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dgl-page">
+
+    <!-- Sticky CTA Bar -->
+    <div class="dgl-sticky-bar" id="dgl-sticky-bar">
+      <div>
+        <span class="dgl-sticky-bar__text">Try 3 Cases at 50% Off</span>
+        <span class="dgl-sticky-bar__subtext">| Full Support Included</span>
+      </div>
+      <a href="#trial" class="dgl-cta-primary dgl-sticky-bar__cta">Start Trial &#8594;</a>
+    </div>
+
+    <!-- SECTION 1: HERO -->
+    <section class="dgl-section dgl-hero" id="hero">
+      <div class="dgl-section-content">
+        <img src="https://digitalsmiledesign.com/images/Digiline/digiline.png" alt="Digiline Logo" class="dgl-hero__logo">
+
+        <h1 class="dgl-hero__headline">
+          Direct-Print Aligners Are Here. Your Patients Will Feel the Difference.
+        </h1>
+
+        <p class="dgl-hero__subhead">
+          Digiline's UV-blocker-free, shape-memory technology delivers precision-engineered aligners that track predictably, feel comfortable from day one, and require 75% fewer visits. This is what orthodontics has been waiting for.
+        </p>
+
+        <a href="#physics" class="dgl-cta-primary">See the Technology Behind It &#8594;</a>
+
+        <p class="dgl-hero__trust-bar">
+          From the makers of Invisalign's original digital models &bull; 70-year clinical heritage &bull; FDA-cleared
+        </p>
+
+        <div class="dgl-hero__stats">
+          <div class="dgl-hero__stat">
+            <div class="dgl-hero__stat-number">90% Thickness Accuracy</div>
+            <div class="dgl-hero__stat-label">vs. 40-60% loss in thermoforming</div>
+          </div>
+          <div class="dgl-hero__stat">
+            <div class="dgl-hero__stat-number">Zero Sensitivity Reports</div>
+            <div class="dgl-hero__stat-label">UV-blocker-free technology</div>
+          </div>
+          <div class="dgl-hero__stat">
+            <div class="dgl-hero__stat-number">75% Fewer Visits</div>
+            <div class="dgl-hero__stat-label">Quarterly monitoring vs. monthly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE PHYSICS PROBLEM -->
+    <section class="dgl-section dgl-physics" id="physics">
+      <div class="dgl-section-content">
+        <h2 class="dgl-physics__headline">
+          The Physics Problem Thermoforming Can't Solve
+        </h2>
+        <p class="dgl-physics__subhead">
+          For 20 years, we've asked heated plastic stretched over models to deliver consistent orthodontic forces. The result: unpredictable thickness loss (40-60%), rapid force decay (75% in 3 hours), and refinement rates that shouldn't be acceptable.
+        </p>
+
+        <div class="dgl-physics__grid">
+          <!-- Column 1: Unpredictable Tracking -->
+          <div class="dgl-physics__card">
+            <div class="dgl-physics__icon">&#x26A0;&#xFE0F;</div>
+            <h3 class="dgl-physics__card-title">Unpredictable Tracking</h3>
+            <p class="dgl-physics__card-text">
+              Thermoformed aligners lose thickness randomly during forming. You can't control where the tray will be thick or thin—so forces are inconsistent and refinements become routine.
+            </p>
+            <div class="dgl-physics__reality">
+              <p class="dgl-physics__reality-title">The reality:</p>
+              <ul class="dgl-physics__reality-list">
+                <li>&bull; 40-60% thickness loss in random areas</li>
+                <li>&bull; No control over force distribution</li>
+                <li>&bull; 30-40% of cases need refinements</li>
+                <li>&bull; Treatment outcomes become guesswork</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2: Patient Discomfort -->
+          <div class="dgl-physics__card">
+            <div class="dgl-physics__icon">&#128563;</div>
+            <h3 class="dgl-physics__card-title">Patient Discomfort</h3>
+            <p class="dgl-physics__card-text">
+              Conventional aligners deliver extreme pressure for hours (causing pain), then forces drop and stay low. Patients suffer at first, then wonder why movement slows.
+            </p>
+            <div class="dgl-physics__reality">
+              <p class="dgl-physics__reality-title">The reality:</p>
+              <ul class="dgl-physics__reality-list">
+                <li>&bull; High initial forces cause day-one pain</li>
+                <li>&bull; 75% force decay within 3 hours</li>
+                <li>&bull; Inconsistent tooth movement</li>
+                <li>&bull; Patient compliance suffers</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3: Chair Time Burden -->
+          <div class="dgl-physics__card">
+            <div class="dgl-physics__icon">&#x23F0;</div>
+            <h3 class="dgl-physics__card-title">Chair Time Burden</h3>
+            <p class="dgl-physics__card-text">
+              Monthly visits to catch tracking issues. Frequent refinements. Attachment management. Your schedule fills with problem-solving instead of new patient growth.
+            </p>
+            <div class="dgl-physics__reality">
+              <p class="dgl-physics__reality-title">The reality:</p>
+              <ul class="dgl-physics__reality-list">
+                <li>&bull; 6-8 hours/month on tracking checks</li>
+                <li>&bull; Multiple refinement appointments per case</li>
+                <li>&bull; Attachment placement/replacement time</li>
+                <li>&bull; Lost opportunity for practice growth</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bridge to Solution -->
+        <div class="dgl-physics__bridge">
+          <p class="dgl-physics__bridge-text">
+            Direct-print changes the physics—and the outcomes.
+          </p>
+        </div>
+
+        <!-- Pull Quote -->
+        <div class="dgl-physics__quote">
+          <p class="dgl-physics__quote-text">
+            "I've asked all my patients over and over...they all say this is much more comfortable."
+          </p>
+          <p class="dgl-physics__quote-author">
+            &mdash; Dr. Bruno Gribel, 3rd-generation orthodontist
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CREDIBILITY WAVE #1 -->
+    <section class="dgl-section dgl-credibility">
+      <div class="dgl-section-content">
+        <h2 class="dgl-credibility__headline">
+          Backed by Science. Proven by Heritage.
+        </h2>
+
+        <div class="dgl-credibility__marker">
+          <h4 class="dgl-credibility__marker-title">70-Year Orthodontic Heritage</h4>
+          <p class="dgl-credibility__marker-text">
+            Three generations of innovation in dental materials and aligner technology. From Park Dental Research to Digiline.
+          </p>
+        </div>
+
+        <div class="dgl-credibility__marker">
+          <h4 class="dgl-credibility__marker-title">4 Master's Level Theses (London University)</h4>
+          <p class="dgl-credibility__marker-text">
+            Independent academic validation of direct-print aligner performance, biomechanics, and clinical outcomes.
+          </p>
+        </div>
+
+        <div class="dgl-credibility__marker">
+          <h4 class="dgl-credibility__marker-title">CT Scan Validation: ±90% Accuracy</h4>
+          <p class="dgl-credibility__marker-text">
+            Precise thickness control vs. 40-60% random loss in thermoforming. Scientific proof of superior manufacturing precision.
+          </p>
+        </div>
+
+        <div class="dgl-credibility__marker">
+          <h4 class="dgl-credibility__marker-title">FDA-Cleared Material</h4>
+          <p class="dgl-credibility__marker-text">
+            Biocompatible resin with &lt;0.1 ppm residual monomer. Exceeds safety standards for intraoral use.
+          </p>
+        </div>
+
+        <div class="dgl-credibility__marker">
+          <h4 class="dgl-credibility__marker-title">First Direct-Print Aligner Brand (2022)</h4>
+          <p class="dgl-credibility__marker-text">
+            Pioneering the future of orthodontics with proprietary printer + resin ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTRAST FRAME -->
+    <section class="dgl-section dgl-contrast">
+      <div class="dgl-section-content">
+        <h2 class="dgl-contrast__headline">
+          The Transformation Is Dramatic
+        </h2>
+        <p class="dgl-contrast__subhead">
+          See exactly what changes when you move from centralized thermoforming to direct-print
+        </p>
+
+        <div class="dgl-contrast__grid">
+          <!-- Old Way -->
+          <div class="dgl-contrast__card dgl-contrast__card--old">
+            <h3 class="dgl-contrast__card-title">
+              &#x274C; OLD WAY
+              <span class="dgl-contrast__card-subtitle">Centralized Thermoforming</span>
+            </h3>
+            <ul class="dgl-contrast__list">
+              <li>&#x274C; Centralized thermoforming labs</li>
+              <li>&#x274C; Product margins surrendered to labs</li>
+              <li>&#x274C; 2-3 week turnaround delays</li>
+              <li>&#x274C; 40-60% random thickness loss (unpredictable)</li>
+              <li>&#x274C; Monthly in-office visits required</li>
+              <li>&#x274C; Generic force delivery (no control)</li>
+              <li>&#x274C; Limited pediatric case options</li>
+              <li>&#x274C; Truckloads of plastic waste weekly</li>
+            </ul>
+          </div>
+
+          <!-- New Way -->
+          <div class="dgl-contrast__card dgl-contrast__card--new">
+            <h3 class="dgl-contrast__card-title">
+              &#x2705; NEW WAY
+              <span class="dgl-contrast__card-subtitle">Digiline Direct-Print</span>
+            </h3>
+            <ul class="dgl-contrast__list">
+              <li>&#x2705; In-practice direct printing (your control)</li>
+              <li>&#x2705; Product margins stay in-house</li>
+              <li>&#x2705; Days, not weeks (rapid turnaround)</li>
+              <li>&#x2705; ±90% accuracy maintained (CT-verified)</li>
+              <li>&#x2705; Quarterly remote monitoring (Grin®) = less chair time</li>
+              <li>&#x2705; Variable-thickness biomechanics (predictable)</li>
+              <li>&#x2705; Kids & interceptive accessories included</li>
+              <li>&#x2705; 60g+ waste saved per case (sustainability)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: DAD-DAM METHODOLOGY -->
+    <section class="dgl-section dgl-daddam">
+      <div class="dgl-section-content">
+        <h2 class="dgl-daddam__headline">
+          The Future of Orthodontics
+        </h2>
+        <p class="dgl-daddam__subhead">
+          What changes when you control BOTH design AND manufacturing
+        </p>
+
+        <div class="dgl-daddam__grid">
+          <!-- DAD -->
+          <div class="dgl-daddam__card">
+            <h3 class="dgl-daddam__card-label">DAD</h3>
+            <h4 class="dgl-daddam__card-title">Direct Aligner Design</h4>
+            <ul class="dgl-daddam__list">
+              <li>&bull; Biomechanical principles</li>
+              <li>&bull; Variable-thickness design protocols</li>
+              <li>&bull; Force management optimization</li>
+              <li>&bull; Research-backed design innovations</li>
+            </ul>
+          </div>
+
+          <!-- DAM -->
+          <div class="dgl-daddam__card">
+            <h3 class="dgl-daddam__card-label">DAM</h3>
+            <h4 class="dgl-daddam__card-title">Direct Aligner Manufacturing</h4>
+            <ul class="dgl-daddam__list">
+              <li>&bull; Proprietary material development</li>
+              <li>&bull; Manufacturing process optimization</li>
+              <li>&bull; Quality control systems (±90% accuracy)</li>
+              <li>&bull; Production scalability in-practice</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Infographic Placeholder -->
+        <div class="dgl-daddam__infographic">
+          <p style="font-size: 20px; line-height: 1.6; margin: 0;">
+            <strong>[INFOGRAPHIC PLACEHOLDER]</strong><br>
+            Visual workflow: Diagnosis &#8594; DAD (Design) &#8594; DAM (Manufacturing) &#8594; Grin® Monitoring<br>
+            <em style="font-size: 16px; opacity: 0.8;">Full infographic to be designed and integrated</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TRANSFORMATION PROMISE -->
+    <section class="dgl-section dgl-transformation">
+      <div class="dgl-section-content">
+        <h2 class="dgl-transformation__headline">
+          What You'll Achieve with Digiline
+        </h2>
+        <p class="dgl-transformation__subhead">
+          Quantified clinical and business outcomes, not just features
+        </p>
+
+        <div class="dgl-transformation__grid">
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">Product Margins Stay In-House</h4>
+            <p class="dgl-transformation__item-text">
+              Keep profitability vs. surrendering margins to centralized labs. Direct-print economics transform your practice.
+            </p>
+          </div>
+
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">50% Fewer Refinements</h4>
+            <p class="dgl-transformation__item-text">
+              Precise force control and predictable outcomes reduce refinements and speed treatment time.
+            </p>
+          </div>
+
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">2/3 Less Chair Time</h4>
+            <p class="dgl-transformation__item-text">
+              Grin® remote monitoring + fewer attachments = dramatically reduced in-person visits. Reclaim profitability.
+            </p>
+          </div>
+
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">Days Not Weeks Turnaround</h4>
+            <p class="dgl-transformation__item-text">
+              In-practice manufacturing eliminates shipping delays. Start treatment immediately.
+            </p>
+          </div>
+
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">60g+ Plastic Waste Saved</h4>
+            <p class="dgl-transformation__item-text">
+              Sustainable direct-print eliminates truckloads of thermoforming waste per practice.
+            </p>
+          </div>
+
+          <div class="dgl-transformation__item">
+            <h4 class="dgl-transformation__item-title">Predictable Treatment Outcomes</h4>
+            <p class="dgl-transformation__item-text">
+              ±90% accuracy vs. 40-60% random thickness loss. Clinically superior, fully digital workflow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PLATFORM OVERVIEW -->
+    <section class="dgl-section dgl-platform">
+      <div class="dgl-section-content">
+        <h2 class="dgl-platform__headline">
+          Complete Workflow: Diagnosis &#8594; Planning &#8594; Manufacturing &#8594; Monitoring
+        </h2>
+
+        <div class="dgl-platform__grid">
+          <div class="dgl-platform__step">
+            <div class="dgl-platform__step-number">1</div>
+            <h4 class="dgl-platform__step-title">Diagnosis</h4>
+            <p class="dgl-platform__step-text">
+              CBCT & DSD smile-photo analysis for precision treatment planning
+            </p>
+          </div>
+
+          <div class="dgl-platform__step">
+            <div class="dgl-platform__step-number">2</div>
+            <h4 class="dgl-platform__step-title">Planning</h4>
+            <p class="dgl-platform__step-text">
+              AI-assisted + orthodontist-reviewed treatment plans with DAD protocols
+            </p>
+          </div>
+
+          <div class="dgl-platform__step">
+            <div class="dgl-platform__step-number">3</div>
+            <h4 class="dgl-platform__step-title">Manufacturing</h4>
+            <p class="dgl-platform__step-text">
+              In-practice direct-printing with proprietary DAM workflow (days, not weeks)
+            </p>
+          </div>
+
+          <div class="dgl-platform__step">
+            <div class="dgl-platform__step-number">4</div>
+            <h4 class="dgl-platform__step-title">Monitoring</h4>
+            <p class="dgl-platform__step-text">
+              Grin® remote monitoring reduces in-person visits by 2/3
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: TECHNICAL ADVANTAGES -->
+    <section class="dgl-section dgl-technical">
+      <div class="dgl-section-content">
+        <h2 class="dgl-technical__headline">
+          8 Clinical & Engineering Advantages of DAD-DAM
+        </h2>
+        <p class="dgl-technical__subhead">
+          High-level benefits with expandable technical depth for those who want it
+        </p>
+
+        <div class="dgl-accordion">
+          <!-- Advantage 1 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>1. Superior Anatomical Adaptation</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Better fit and improved orthodontic tooth movement (OTM)</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> Fewer attachments required, better expression of OTM due to precise geometry. Direct-print maintains designed shape without thermoforming distortion, resulting in superior tooth contact and force transfer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 2 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>2. Advanced Design Capabilities</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Enhanced biomechanics with precise control of thickness and forces</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> Variable-thickness design protocols enable precise force management. CT scan validation shows ±90% accuracy vs. 40-60% random loss in thermoforming. 1x1mm geometric modification = 60% force increase (50&#8594;80g), demonstrating exact biomechanical control.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 3 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>3. Superior Material with Shape Memory</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Biocompatible material with ideal force delivery and heat-activated shape memory</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> FDA-cleared biocompatible resin (&lt;0.1 ppm residual monomer). Delivers low, constant ideal force for continuous tooth movement. Heat-activated shape memory allows reactivation via freeze-drying technology, maintaining force longer than thermoformed aligners.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 4 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>4. Enhanced Patient Experience</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Better comfort, easier insertion and removal, biological considerations</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> Easy insertion whether heated or not. Easy removal reduces patient frustration. Biocompatible material considers biological safety. Superior anatomical adaptation = improved comfort and compliance throughout treatment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 5 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>5. Manufacturing Advantages</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> More automation, less labor dependency, shorter turnaround</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> One person operates 4 printers producing 150 aligners/hour. Highly automated workflow reduces labor costs and human error. In-practice manufacturing = days not weeks turnaround, eliminating shipping delays.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 6 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>6. Environmental Impact</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Dramatically reduced plastic and resin waste</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> 60g+ plastic waste saved per case (aligner waste reduction). Eliminates thermoforming model waste (resin waste reduction). No truckload shipping = reduced carbon footprint. 75% overall plastic reduction vs. centralized thermoforming.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 7 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>7. Clinical Workflow Benefits</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Less chair time, fewer refinements, more predictable outcomes</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> Less chair time placing/removing attachments (fewer needed). Less chair time with refinements (50% fewer required). Shorter treatment time due to more predictable outcomes from precise force control. Grin® remote monitoring reduces in-person visits by 2/3.
+              </p>
+            </div>
+          </div>
+
+          <!-- Advantage 8 -->
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>8. Economic Advantages</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p class="dgl-accordion-benefit"><strong>Benefit:</strong> Lower costs through fewer refinements and reduced chair time</p>
+              <p class="dgl-accordion-detail">
+                <strong>Technical Detail:</strong> Fewer refinements = reduced material and labor costs. Less chair time = higher practice productivity and profitability. Product margins stay in-house vs. surrendered to centralized labs. Compete with offshore pricing at superior quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: WHO THIS IS FOR -->
+    <section class="dgl-section dgl-audience">
+      <div class="dgl-section-content">
+        <h2 class="dgl-audience__headline">
+          Join the First Wave of Direct-Print Orthodontics
+        </h2>
+
+        <div class="dgl-audience__box dgl-audience__box--positive">
+          <h3 class="dgl-audience__box-title">&#x2705; This IS for you if:</h3>
+          <ul class="dgl-audience__list">
+            <li>&#x2705; You want to regain control of aligner economics and workflow</li>
+            <li>&#x2705; You want to keep product margins in-house vs. surrendering them to labs</li>
+            <li>&#x2705; You value clinical precision backed by scientific validation</li>
+            <li>&#x2705; You want to reduce chair time and offer remote monitoring</li>
+            <li>&#x2705; You're committed to sustainable, waste-reducing practices</li>
+            <li>&#x2705; You're ready to be an early adopter and innovation leader</li>
+          </ul>
+        </div>
+
+        <div class="dgl-audience__box dgl-audience__box--negative">
+          <h3 class="dgl-audience__box-title">&#x274C; This is NOT for you if:</h3>
+          <ul class="dgl-audience__list">
+            <li>&#x274C; You're locked into long-term vendor contracts</li>
+            <li>&#x274C; You're not ready to adopt digital-first workflows</li>
+            <li>&#x274C; You prefer status quo over innovation</li>
+            <li>&#x274C; You don't have space for in-practice manufacturing</li>
+          </ul>
+        </div>
+
+        <p class="dgl-audience__footer">
+          High-volume practices, progressive DSOs, and forward-thinking clinicians are joining the direct-print revolution.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 10: TRIAL OFFER -->
+    <section class="dgl-section dgl-trial" id="trial">
+      <div class="dgl-section-content">
+        <h2 class="dgl-trial__headline">
+          Try Your First 3 Cases at 50% Off
+        </h2>
+        <p class="dgl-trial__subhead">
+          Experience the complete DAD-DAM workflow with full support
+        </p>
+
+        <div class="dgl-trial__box">
+          <h3 class="dgl-trial__box-title">What's Included in Your Trial:</h3>
+
+          <div class="dgl-trial__items">
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">CBCT & DSD Smile-Photo Diagnosis</div>
+                <div class="dgl-trial__item-text">Comprehensive digital analysis for treatment planning</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">AI + Orthodontist Treatment Plan</div>
+                <div class="dgl-trial__item-text">AI-assisted planning reviewed by licensed orthodontist</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">Direct-Printed Aligners (Full Series)</div>
+                <div class="dgl-trial__item-text">Complete aligner sets manufactured with DAD-DAM methodology</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">3-Month Supply + Lost-Tray Reprints</div>
+                <div class="dgl-trial__item-text">Material supply and backup replacements included</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">Grin® Remote Monitoring Kit</div>
+                <div class="dgl-trial__item-text">Reduce in-person visits by 2/3 with patient tracking</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">Training & Onboarding Support</div>
+                <div class="dgl-trial__item-text">Complete setup assistance and workflow training</div>
+              </div>
+            </div>
+
+            <div class="dgl-trial__item">
+              <span class="dgl-trial__item-icon">&#x2705;</span>
+              <div>
+                <div class="dgl-trial__item-title">Full Technical Support During Trial</div>
+                <div class="dgl-trial__item-text">Dedicated support team available throughout your trial period</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dgl-trial__cta-container">
+          <a href="#contact" class="dgl-cta-primary">Start Your Trial Cases &#8594;</a>
+        </div>
+
+        <p class="dgl-trial__disclaimer">
+          Limited availability for early adopters. Secure your spot in the direct-print revolution.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 11: FAQ & FINAL CTA -->
+    <section class="dgl-section dgl-faq">
+      <div class="dgl-section-content">
+        <h2 class="dgl-faq__headline">
+          Common Questions
+        </h2>
+
+        <div class="dgl-accordion">
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Technical: What are the material specifications?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Biocompatible resin, FDA-cleared, &lt;0.1 ppm residual monomer, UV-blocker-free formulation. Full material data sheet available upon request.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Technical: What's the typical turnaround time?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Days not weeks for in-practice manufacturing. Immediate treatment start capability with no shipping delays.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Business: What are the pricing tiers after trial?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Volume-based pricing available. Product margins stay in-house vs. centralized lab fees. Contact us for practice-specific quote.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Business: Is there a distributor/partner model?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Yes, partnership opportunities available for distributors and DSOs. Contact us for detailed partnership information.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Clinical: What case complexity can Digiline handle?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Mild to moderate cases, interceptive orthodontics, and pediatric cases. Detailed case assessment included in trial consultation.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Clinical: How do refinements work?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>50% fewer refinements due to precise force control. Fast in-practice manufacturing when refinements are needed (days, not weeks).</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Operations: What space/equipment is required?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Small footprint printer system. One person can operate 4 printers producing 150 aligners/hour. Full setup guidance provided during trial.</p>
+            </div>
+          </div>
+
+          <div class="dgl-accordion-item">
+            <button class="dgl-accordion-button" aria-expanded="false">
+              <span>Operations: What training is provided?</span>
+              <span class="dgl-accordion-icon">+</span>
+            </button>
+            <div class="dgl-accordion-content">
+              <p>Complete onboarding, workflow training, and ongoing technical support. All included in your trial period.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="dgl-faq__final-cta">
+          <h2 class="dgl-faq__final-headline">
+            Join the Direct-Print Revolution
+          </h2>
+          <p class="dgl-faq__final-subhead">
+            Early adopters are transforming their practices. Will you lead or follow?
+          </p>
+          <a href="#trial" class="dgl-cta-primary">Secure Your Early Adopter Advantage &#8594;</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // Sticky CTA Bar
+      const stickyBar = document.getElementById('dgl-sticky-bar');
+      if (stickyBar) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 800) {
+            stickyBar.classList.add('visible');
+          } else {
+            stickyBar.classList.remove('visible');
+          }
+        });
+      }
+
+      // Accordion Functionality
+      const accordionButtons = document.querySelectorAll('.dgl-accordion-button');
+      accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const item = this.parentElement;
+          const content = item.querySelector('.dgl-accordion-content');
+          const isOpen = item.classList.contains('active');
+
+          // Close all accordions in the same parent container
+          const parentAccordion = this.closest('.dgl-accordion');
+          parentAccordion.querySelectorAll('.dgl-accordion-item').forEach(i => {
+            i.classList.remove('active');
+            const c = i.querySelector('.dgl-accordion-content');
+            c.style.maxHeight = null;
+          });
+
+          // Open clicked accordion if it wasn't already open
+          if (!isOpen) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
